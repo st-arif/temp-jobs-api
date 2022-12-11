@@ -34,7 +34,7 @@ app.use(xss())
 
 // routes
 app.get('/', (req, res) => {
-  res.send('jobs api');
+  res.send('<h1>Welcome to Jobs Api</h1>');
 });
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/jobs', authenticateUser, jobsRouter)
